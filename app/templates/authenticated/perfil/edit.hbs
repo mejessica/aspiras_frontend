@@ -1,0 +1,79 @@
+<h2 class="title">Edite suas informações</h2>
+
+<div class="register needs-validation" id="perfil">
+    <div>
+        <label class="form-label" for="email">Email</label>
+        <input class="form-control email" type="email" name="email" id="email" maxlength="255" {{on 'change' (fn
+            this.setInput 'email' )}} value={{this.model.email}} placeholder="teste@teste.com"><br>
+           
+    </div>
+
+    <div>
+        <label class="form-label" for="nome">Nome</label>
+        <input class="form-control campo" type="text" name="nome" id="nome" maxlength="255" {{on 'change' (fn
+            this.setInput 'nome' )}} value={{this.model.nome}} placeholder="Nome"><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="dataNasc">Data de nascimento</label>
+        <input class="form-control campo" type="date" name="dataNasc" id="dataNasc" min="01/01/1900" max="20/03/2024"
+            {{on 'change' (fn this.setInput 'dataNasc' )}} value={{this.model.dataNasc}}><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="endereco">Endereço</label>
+        <input class="form-control campo" type="text" name="endereco" id="endereco" maxlength="255" {{on 'change' (fn
+            this.setInput 'endereco' )}} value={{this.model.endereco}} placeholder="Endereço"><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="bairro">Bairro</label>
+        <input class="form-control campo" type="text" name="bairro" id="bairro" {{on 'change' (fn this.setInput 'bairro'
+            )}} value={{this.model.bairro}} placeholder="Bairro"><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="cidade">Cidade</label>
+        <input class="form-control campo" type="text" name="cidade" id="cidade" {{on 'change' (fn this.setInput 'cidade'
+            )}} value={{this.model.cidade}} placeholder="Cidade"><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="estado">Estado</label>
+        <input class="form-control campo" type="text" name="estado" id="estado" {{on 'change' (fn this.setInput 'estado'
+            )}} value={{this.model.estado}} placeholder="Estado"><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="pais">País</label>
+        <input class="form-control campo" type="text" name="pais" id="pais" {{on 'change' (fn this.setInput 'pais' )}}
+            value={{this.model.pais}} placeholder="pais"><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="password">Senha</label>
+        <input class="form-control" type="password" name="password" id="password" {{on 'change' (fn
+            this.setInput 'password' )}} placeholder="Senha">
+        <p class="form-text">8 caracteres, uma letra maiúscula e minúscula, um numero, um simbolo</p>
+    </div>
+
+    <div>
+        <label class="form-label" for="confirm">Confirmação da senha</label>
+        <input class="form-control" id="confirm" type="password" name="confirm" placeholder="confirmar senha" {{on 'change' (fn
+            this.setInput 'confirm' )}}><br>
+    </div>
+    
+    {{#if @model}}
+    <div>
+        <ul>
+            {{#each this.model.errors as |error|}}
+            <li style="color: red">{{error.message}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <br>
+    {{/if}}
+     
+    <button class="btn btn-primary" type="submit" {{on 'click' this.verificar}}>Salvar</button>
+    <LinkTo class="btn btn-outline-secondary" @route="authenticated.perfil.index">Voltar</LinkTo><br>
+</div>

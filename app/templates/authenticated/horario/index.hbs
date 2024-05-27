@@ -1,0 +1,107 @@
+{{page-title "Index"}}
+
+<div class="newTodo" id="tables">
+    <h2 class="title">Seus horários registrados</h2>
+    <LinkTo class="btn btn-outline-dark" @route='authenticated.horario.configuration'>Configurações de horários</LinkTo>
+    <LinkTo class="btn btn-outline-dark" @route='authenticated.horario.hora'>Incluir carga horária</LinkTo>
+    <br><br><br>
+
+    <div class="month">
+        <input class="form-control" id="month" type="month" value={{this.currentMonth}} {{on 'change'
+            this.getData}}>
+    </div>
+
+    <div class="tabelas">
+        <br>
+
+        <table class="table" id="tabela2">
+            <thead>
+                <br>
+                <tr>
+                    <th scope="col">Mês</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">Total devido</th>
+                    <td>{{this.devidas}}</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Total extra</th>
+                    <td>{{this.extras}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total trabalhado</th>
+                    <td>{{this.total}}</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div id="resp">
+        <table class="table" id="tabela1">
+            <thead id="cabecalho">
+                <br><br>
+                <tr>
+                    <th scope="col">Dia</th>
+                    <th scope="col">Entrada AM</th>
+                    <th scope="col">Saída AM</th>
+                    <th scope="col">Entrada PM</th>
+                    <th scope="col">Saída PM</th>
+                    <th scope="col">Semana</th>
+                    <th scope="col">Trabalhadas</th>
+                    <th scope="col">Devidas</th>
+                    <th scope="col">Extras</th>
+
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                {{#each @model as |item|}}
+                <tr>
+                     <th scope="row">
+                        {{ moment-format item.data 'DD'}}
+                    </th>
+                    <td>{{item.entrada1}}</td>
+                    <td>{{item.saida1}}</td>
+                    <td>{{item.entrada2}}</td>
+                    <td>{{item.saida2}}</td>
+                    <td>{{moment-format item.data 'ddd'}}</td>
+                    <td>{{item.total}}</td>
+                    <td>{{item.devidas}}</td>
+                    <td>{{item.extras}}</td>
+                </tr>
+                {{/each}}
+
+                        
+            {{#each this.diasDoMes as |dia|}}
+               {{#each @model as |item|}}
+               {{#if (compare dia.data item.data)}}
+                <tr>
+                    <th scope="row">
+                        <LinkTo @route="authenticated.horario.hora">{{ moment-format item.data 'DD'}}</LinkTo>
+                    </th>
+                    <td>{{item.entrada1}}</td>
+                    <td>{{item.saida1}}</td>
+                    <td>{{item.entrada2}}</td>
+                    <td>{{item.saida2}}</td>
+                    <td>{{moment-format item.data 'ddd'}}</td>
+                    <td>{{item.total}}</td>
+                    <td>{{item.devidas}}</td>
+                    <td>{{item.extras}}</td>
+                </tr>
+               {{/if}}
+               {{/each}}
+                <tr>
+                    <th>{{dia.data}}</th>
+                </tr>
+                {{/each}}
+
+            </tbody>
+
+        </table>
+    </div>
+
+    </div>
+
+</div>

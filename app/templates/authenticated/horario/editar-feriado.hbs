@@ -1,0 +1,34 @@
+{{page-title "EditarFeriado"}}
+<h2 class="title">Feriados registrados</h2>
+<div>
+<LinkTo class="btn btn-light" @route="authenticated.horario.feriado">Voltar</LinkTo><br><br><br>
+</div>
+  
+
+<div id="feriado">
+
+    {{#each @model as |item|}}
+
+    <div class="card" style="width: 18rem;" id="card-{{item.id}}">
+        <div class="card-body">
+            <div>
+                <label class="form-label" for="data">Data</label>
+                <input class="form-control" type="date" name="data" id="data" value={{item.data}} {{on 'change' (fn
+                    this.setInput item 'data' )}} placeholder="data"><br>
+            </div>
+
+            <div>
+                <label class="form-label" for="descricao">Descrição</label>
+                <input class="form-control" type="text" name="descricao" id="descricao" {{on 'change' (fn
+                    this.setInput item 'descricao' )}} value={{item.descricao}} placeholder="descricao">
+            </div>
+            <small></small>
+            <br>
+        </div>
+        <button id="btn-feriado" class="btn btn-success" type="button" {{on "click" (fn this.editFeriado item)}}>Editar</button>
+        <button id="btn-feriado" class="btn btn-danger" type="button" {{on "click" (fn this.delete item)}}>Delete</button>
+    </div>
+    
+    {{/each}}
+  
+</div>

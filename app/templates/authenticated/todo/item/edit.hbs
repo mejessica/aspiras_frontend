@@ -1,0 +1,37 @@
+{{page-title "Edit"}}
+
+<h2 class="title">Edite seu item!</h2>
+<br>
+{{log this.model}}
+<div class="newTodo needs-validation">
+    <div>
+        <label class="form-label" for="descricao">Descrição</label>
+        <input class="form-control" type="textarea" name="descricao" id="descricao" {{on 'change' (fn this.setInput 'descricao')}} 
+            value={{this.model.descricao}} placeholder="Descrição" required><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="prioridade">Prioridade</label>
+        <select class="form-select" aria-label="Default select example" id="prioridade" required>
+            <option selected value={{this.model.prioridade}}>{{this.model.prioridade}}</option>
+            <option value="Alta">Alta</option>
+            <option value="Media">Média</option>
+            <option value="Baixa">Baixa</option>
+        </select>
+    </div>
+
+
+    <div>
+        <label class="form-label" for="realizado">Realizado</label>
+        <select class="form-select" name="realizado" id="realizado" required>
+            <option selected value={{this.model.realizado}}>{{this.model.realizado}}</option>
+            <option value='Não'>Não</option>
+            <option value='Sim'>Sim</option>
+        </select>
+    </div>
+    <small></small><br><br>
+    <button class="btn btn-success" type="submit" {{on 'click' this.verificar}}>Salvar</button>
+    <button class='btn btn-danger' type="submit" {{on 'click' this.deleteItem}}>Deletar</button>
+    <LinkTo type="button" class="btn voltar btn-outline-secondary" @route="authenticated.todo.item">Voltar</LinkTo><br>
+
+</div>

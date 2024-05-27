@@ -1,0 +1,294 @@
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* APPLICATION */
+.main {
+    min-height: 150vh;
+    display: relative;
+    flex-direction: column;
+}
+
+
+/* HEADER */
+.dropdown-toggle,
+.dropdown-menu {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-fluid {
+    padding: 2rem 5rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.d-flex.dropdown.btn {
+    font-size: 1.2rem;
+}
+
+
+/* ALL APP */
+h1,
+h2 {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title {
+    text-align: center;
+    margin: 5rem;
+
+}
+
+.newTodo {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: auto; */
+    width: 20rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.todos {
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#perfil {
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-light {
+    margin-left: 10%;
+}
+
+
+/* TODO-LIST */
+a {
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
+a:hover {
+    transition: 0.2s;
+    color: gray;
+}
+
+
+/* LOGIN */
+.login {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* REGISTER */
+.register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+    width: 30%;
+    height: 60%;
+}
+
+
+/* INDEX */
+.content {
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.carouselExampleCaptions,
+.d-block {
+    filter: brightness(57%);
+}
+
+.index {
+    min-height: 100vh;
+}
+
+
+/* EDITAR-FERIADO*/
+#feriado {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 0 10%;
+}
+
+#btn-feriado {
+    width: 35%;
+    margin: 10px 0 10px 10px;
+}
+
+
+/*HORAS/INDEX*/
+.tabelas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+#tables {
+    width: 80%;
+    height: 75%;
+}
+
+#tabela2 {
+    width: 30%;
+}
+
+#resp{
+    margin-top: 2rem;
+    position: relative;
+    overflow-y: auto;
+    height: 80vh;
+}
+
+#tabela1 {
+    margin-bottom: 5rem;
+}
+
+#month {
+    width: 25%;
+}
+
+/* CLASSLIST */
+.input-border-danger {
+    border: 2px solid #efa09b;
+}
+
+.input-border-success {
+    border: 2px solid #91c68d;
+}
+
+.color-danger {
+    color: #e92824;
+}
+
+.color-success {
+    color: green;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/* CORRIGINDO BOOTSTRAP */
+.voltar {
+    color: #6c757d !important;
+    background-color: #fff !important;
+    border-color: #6c757d !important;
+}
+
+.voltar:hover {
+    color: #fff !important;
+    background-color: #6c757d !important;
+}
+
+
+/* RESPONSIVO */
+@media(max-width: 881px) {
+    .register {
+        width: 80%;
+    }
+
+    .title {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .btn {
+        margin-bottom: 5px;
+    }
+
+    #month {
+        width: 65%;
+    }
+
+    #tabela2 {
+        width: 15rem;
+    }
+
+    #resp{
+        position: relative;
+        overflow: auto;
+        width: 100%;
+        height: 60vh;
+        margin-top: 1rem;
+       
+    }
+
+    .container-fluid {
+        padding: 2rem 3rem 2rem 1rem;
+        width: 100%;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .login {
+        width: 80%;
+    }
+
+    .newTodo {
+        width: 80%;
+    }
+
+}

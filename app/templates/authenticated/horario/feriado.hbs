@@ -1,0 +1,26 @@
+{{page-title "Feriado"}}
+
+
+
+<div class="newTodo">
+    <h2 class="title">Salvar feriado</h2>
+    <LinkTo class="btn btn-outline-dark" @route="authenticated.horario.editarFeriado">Vizualizar feriados</LinkTo>
+    <br><br><br>
+    <div>
+        <label  class="form-label" for="data">Data</label>
+        <input class="form-control"  type="date" name="data" id="data" {{on 'change' (fn this.setInput 'data' )}} required
+            value={{this.model.data}} placeholder="data"><br>
+    </div>
+
+    <div>
+        <label  class="form-label" for="descricao">Descrição</label>
+        <input class="form-control"  type="text" name="descricao" id="descricao" required {{on 'change' (fn this.setInput 'descricao' )}}
+            value={{this.model.descricao}} placeholder="descricao">
+    </div>
+    <small></small>
+    <br><br>
+    <button class="btn btn-secondary" type="button" id="submit" {{on "click" this.verificar}}>Salvar feriado</button>
+    <LinkTo class="btn btn-outline-secondary" @route="authenticated.horario.configuration">Voltar</LinkTo><br>
+
+</div>
+

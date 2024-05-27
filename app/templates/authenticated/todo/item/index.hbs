@@ -1,0 +1,30 @@
+
+<h2 class="title">Seus itens</h2>
+<div>
+    <LinkTo  type="button" class="btn btn-light" @route="authenticated.todo.item.newitem">Novo item</LinkTo>
+    <LinkTo type="button" class="btn btn-outline-secondary" @route="authenticated.list">Voltar</LinkTo><br><br><br>
+</div>
+
+<div class="todos">
+
+    {{#each @model as |item|}}
+
+
+    <div class="card">
+        <div class="card-body">
+            <h4><LinkTo class="form-label" @route="authenticated.todo.item.edit" @model={{item}}>{{item.descricao}}</LinkTo></h4>
+
+            <div>
+                <label class="form-label" for="prioridade">Prioridade: {{item.prioridade}}</label>
+            </div>
+            <div>
+                <label class="form-label" for="realizado">Realizado: {{item.realizado}}</label>
+            </div>
+            <br>
+               <LinkTo class="btn btn-dark" @route="authenticated.todo.item.edit" @model={{item.id}}>Editar</LinkTo><br>
+        </div>
+      
+    </div>
+
+    {{/each}}
+</div>

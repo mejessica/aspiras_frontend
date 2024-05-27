@@ -1,0 +1,35 @@
+{{page-title "nova item To-Do"}}
+
+<div class="newTodo">
+    <h2 class="title">Crie seu novo item!</h2>
+    <div>
+        <label class="form-label" for="descricao">Descrição</label>
+        <input class="form-control" type="textarea" name="descricao" id="descricao" {{on 'change' (fn
+            this.setInput 'descricao' )}} value={{this.model.descricao}} placeholder="Descrição"><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="prioridade">Prioridade</label>
+        <select class="form-select" aria-label="Default select example" id="prioridade" {{on 'change' (fn
+            this.setInput 'prioridade' )}}>
+            <option selected value="">Select</option>
+            <option value="Alta">Alta</option>
+            <option value="Media">Média</option>
+            <option value="Baixa">Baixa</option>
+        </select>
+    </div>
+
+
+    <div>
+        <label class="form-label" for="realizado">Realizado</label>
+        <select class="form-select" name="realizado" id="realizado" {{on 'change' (fn this.setInput 'realizado' )}}>
+            <option selected value="">Select</option>
+            <option value='Não'>Não</option>
+            <option value='Sim'>Sim</option>
+        </select>
+    </div>
+    <small></small>
+    <br><br>
+    <button class="btn btn-success" type="submit" id="submit" {{on 'click' this.verificar}}>Enviar</button>
+    <LinkTo class="btn voltar btn-outline-secondary" @route="authenticated.todo.item">Voltar</LinkTo><br>
+</div>

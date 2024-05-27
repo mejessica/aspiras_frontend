@@ -1,0 +1,40 @@
+<div class="menu">
+  {{#if this.session.isAuthenticated}}
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <LinkTo @route="authenticated" class="navbar-brand">Aspiras</LinkTo>
+      <form class="d-flex" role="search">
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Opções
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" {{on "click" this.invalidateSession}}>Logout</a></li>
+            <li>
+              <LinkTo class="dropdown-item" @route='authenticated.list'>Todo-list</LinkTo>
+            </li>
+             <li>
+              <LinkTo class="dropdown-item" @route='authenticated.perfil'>Editar perfil</LinkTo>
+            </li>
+            <li>
+              <LinkTo class="dropdown-item" @route='authenticated.horario'>Horarios</LinkTo>
+            </li>
+            <li>
+              <LinkTo class="dropdown-item" @route='authenticated.horario.editarFeriado'>Feriados</LinkTo>
+            </li>
+
+          </ul>
+        </div>
+      </form>
+    </div>
+  </nav>
+  {{/if}}
+</div>
+<div class="main">
+  {{outlet}}
+</div>
+
+{{#if this.session.isAuthenticated}}
+<Footer />
+{{/if}}

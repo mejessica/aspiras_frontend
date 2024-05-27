@@ -1,0 +1,49 @@
+<h2 class="title">Suas listas</h2>
+<h4>
+  <LinkTo class="btn btn-light" @route="authenticated.todo.newlist">Nova To-do</LinkTo>
+</h4>
+
+
+<div class="todos">
+
+  {{#each @model as |item|}}
+  <div class="card" style="width: 16rem;">
+    <div class="card-body">
+
+      <h4>
+        <LinkTo class="form-label" @route="authenticated.todo.item" @model={{item}}>{{item.nome}}</LinkTo>
+      </h4>
+      <p class="card-text">{{item.dataTermino}}</p>
+
+
+      <LinkTo class="btn btn-outline-secondary" type="button" @route="authenticated.todo.item" @model={{item}}>Ver
+      </LinkTo>
+
+      <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">Delete</button>
+
+    </div>
+
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir lista</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Tem certeza que deseja excluir a lista?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button class="btn btn-danger" type="button" data-bs-dismiss="modal" {{on "click" (fn this.delete item)}}>Deletar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{/each}}
+
+</div>

@@ -1,0 +1,52 @@
+<h2 class="title">Informações do usuário</h2>
+<div class="register" id="perfil">
+
+    <div>
+        <label class="form-label" for="email">Email</label>
+        <input class="form-control" type="email" name="email" id="email" maxlength="255" value={{this.model.email}}
+            placeholder="E-mail" disabled=""><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="nome">Nome</label>
+        <input class="form-control" type="text" name="nome" id="nome" maxlength="255" value={{this.model.nome}}
+            placeholder="Nome" disabled=""><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="dataNasc">Data de nascimento</label>
+        <input class="form-control" type="date" name="dataNasc" id="dataNasc" min="01/01/1900" max="20/03/2024"
+            value={{this.model.dataNasc}} disabled=""><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="endereco">Endereço</label>
+        <input class="form-control" type="text" name="endereco" id="endereco" maxlength="255"
+            value={{this.model.endereco}} placeholder="Endereço" disabled=""><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="bairro">Bairro</label>
+        <input class="form-control" type="text" name="bairro" id="bairro" value={{this.model.bairro}}
+            placeholder="Bairro" disabled=""><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="cidade">Cidade</label>
+        <input class="form-control" type="text" name="cidade" id="cidade" value={{this.model.cidade}}
+            placeholder="Cidade" disabled=""><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="estado">Estado</label>
+        <input class="form-control" type="text" name="estado" id="estado" value={{this.model.estado}}
+            placeholder="Estado" disabled=""><br>
+    </div>
+
+    <div>
+        <label class="form-label" for="pais">País</label>
+        <input class="form-control" type="text" name="pais" id="pais" value={{this.model.pais}} placeholder="pais" disabled=""><br>
+    </div>
+    <br>
+    <LinkTo class="btn btn-secondary" @route="authenticated.perfil.edit" @model={{this.model.id}}>Editar</LinkTo><br>
+</div>

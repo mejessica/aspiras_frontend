@@ -1,0 +1,75 @@
+
+<h2 class="title">Incluir sua carga horária</h2>
+<div class="newTodo" id="perfil">
+
+        <h3>Dia</h3>
+        <input class="form-control" type="date" name="data" id="data" {{on 'change' this.getData}} 
+        value={{this.data}} placeholder="Dia"> 
+   
+        {{#if this.model}}
+
+      
+        <h3>Am</h3>
+        <div>
+       
+            <input class="form-control" type="time" name="entrada1" id="entrada1" value={{this.model.firstObject.entrada1}}
+                {{on 'change' (fn this.setInputEdit this.model 'entrada1' )}} placeholder="Entrada am"><br>
+        </div>
+        <div>
+ 
+            <input class="form-control" type="time" name="saida1" id="saida1" {{on 'change' (fn this.setInputEdit this.model 'saida1' 
+                )}} value={{this.model.firstObject.saida1}} placeholder="Saída am"><br>
+        </div>
+        <h3>Pm</h3>
+        <div>
+          
+            <input class="form-control" type="time" name="entrada2" id="entrada2" {{on 'change' (fn
+                this.setInputEdit this.model 'entrada2' )}} value={{this.model.firstObject.entrada2}} placeholder="Entrada pm"><br>
+        </div>
+        <div>
+      
+            <input class="form-control" type="time" name="saida2" id="saida2" {{on 'change' (fn this.setInputEdit this.model 'saida2' 
+                )}} value={{this.model.firstObject.saida2}} placeholder="Saída pm"><br>
+        </div>
+        <small></small>
+        <br><br>
+
+        <button class="btn btn-secondary" type="button" id="submit" {{on "click" (fn this.saveHoras this.model.firstObject)}}>Editar carga
+            horaria</button>
+        <LinkTo class="btn btn-outline-primary" @route="authenticated.horario.index">Voltar</LinkTo><br>
+        <br><br>
+
+    {{else}}
+
+    <h3>Am</h3>
+    <div>
+        <input class="form-control" type="time" name="entrada1" id="entrada1" value={{this.model.entrada1}}
+            {{on 'change' (fn this.setInput 'entrada1' )}} placeholder="Entrada am"><br>
+    </div>
+    <div>
+
+        <input class="form-control" type="time" name="saida1" id="saida1" {{on 'change' (fn this.setInput 'saida1' )}}
+            value={{this.model.saida1}}  placeholder="Saída am"><br>
+    </div>
+    <h3>Pm</h3>
+    <div>
+   
+        <input class="form-control" type="time" name="entrada2" id="entrada2" {{on 'change' (fn this.setInput  'entrada2'
+            )}} value={{this.model.entrada2}} placeholder="Entrada pm"><br>
+    </div>
+    <div>
+   
+        <input class="form-control" type="time" name="saida2" id="saida2" {{on 'change' (fn this.setInput  'saida2' )}}
+            value={{this.model.saida2}} placeholder="Saída pm">
+    </div>
+    <small></small>
+    <br><br>
+    <button class="btn btn-secondary" type="button" id="submit" {{on "click" (fn this.verificar)}}>Salvar carga
+        horaria</button>
+    <LinkTo class="btn btn-outline-primary" @route="authenticated.horario.index">Voltar</LinkTo><br>
+    <br><br>
+
+ {{/if}}
+
+</div>
+

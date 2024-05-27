@@ -1,0 +1,17 @@
+<div class="newTodo needs-validation">
+   <h2 class="title">Crie sua nova Lista!</h2>
+    <div>
+      <label class="form-label" for="nome">Nome To-do</label>
+      <input class="form-control" type="text" name="nome" id="nome" maxlength="255" {{on 'change' (fn this.setInput 'nome' )}}
+        value={{this.model.nome}} placeholder="Nome" required><br>
+    </div>
+
+     <div>
+        <label class="form-label" for="dataTermino">Data de término</label>
+        <input class="form-control" type="date" name="dataTermino" id="dataTermino" max="20/03/2030" {{on 'change' (fn
+            this.setInput 'dataTermino' )}} value={{this.model.dataTermino}} required>
+    </div>
+    <small></small>
+    <br><br><button class="btn btn-success" type="submit" id="submit" {{on 'click' this.verificar}}>Enviar</button>
+      <LinkTo class="btn btn-outline-secondary" @route="authenticated.list">Voltar</LinkTo><br>
+</div>

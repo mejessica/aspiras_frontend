@@ -1,0 +1,128 @@
+{{page-title "Configuracoes"}}
+
+{{#if @model}}
+  <h2 class="title">Definir cargas horarias</h2>
+
+<div class="newTodo" id="perfil">
+
+  <div>
+   <label class="form-text" for="segunda">Segunda</label>
+    <input class="form-control"  type="time" name="segunda" id="segunda" {{on 'change' (fn this.setInputEdit 'seg' )}}
+      value={{this.model.seg}} placeholder="Segunda">
+  </div>
+
+  <div>
+    <label class="form-text" for="terca">Terça</label>
+    <input class="form-control"  type="time" name="terca" id="terca" {{on 'change' (fn this.setInputEdit 'ter' )}} value={{this.model.ter}}
+      placeholder="Terça">
+  </div>
+
+  <div>
+    <label class="form-text" for="quarta">Quarta</label>
+    <input class="form-control"  type="time" name="quarta" id="quarta" {{on 'change' (fn this.setInputEdit 'qua' )}}
+     value={{this.model.qua}} placeholder="Quarta">
+  </div>
+
+  <div>
+    <label class="form-text" for="quinta">Quinta</label>
+    <input class="form-control" type="time" name="quinta" id="quinta" {{on 'change' (fn this.setInputEdit 'qui' )}}
+     value={{this.model.qui}} placeholder="Quinta">
+  </div>
+
+  <div>
+    <label class="form-text" for="sexta">Sexta</label>
+    <input class="form-control"  type="time" name="sexta" id="sexta" {{on 'change' (fn this.setInputEdit 'sex' )}} value={{this.model.sex}}
+      placeholder="Sexta">
+  </div>
+
+  <div>
+    <label class="form-text" for="sabado">Sábado</label>
+    <input class="form-control"  type="time" name="sabado" id="sabado" {{on 'change' (fn this.setInputEdit 'sab' )}}
+      value={{this.model.sab}} placeholder="Sabado">
+  </div>
+
+  <div>
+    <label class="form-text" for="domingo">Domingo</label>
+    <input class="form-control"  type="time" name="domingo" id="domingo" {{on 'change' (fn this.setInputEdit 'dom' )}}
+      value={{this.model.dom}} placeholder="Domingo">
+  </div>
+
+<br>
+  {{!-- <div>
+
+    <label for="feriado">feriado</label>
+    <input type="time" name="feriado" id="feriado" {{on 'change' (fn this.setInput 'feriado' )}}
+      value={{this.model.feriado}} placeholder="feriado"><br>
+  </div> --}}
+  <button class="btn btn-success" type="button" id="submit" {{on "click" this.editConfig}}>Editar</button>
+  <LinkTo class="btn btn-outline-dark" @route='authenticated.horario.feriado'>Tabela de feriados</LinkTo>
+  <LinkTo class="btn btn-outline-secondary" @route="authenticated.horario.index">Voltar</LinkTo><br>
+
+
+</div>
+
+
+{{else}}
+
+<h2 class="title">Nova configuração</h2>
+
+<div class="newTodo" id="perfil">
+
+  <div>
+   <label class="form-text" for="segunda">Segunda</label>
+    <input class="form-control" type="time" name="segunda" id="segunda" {{on 'change' (fn this.setInput 'seg' )}}
+      value={{moment-format this.model.seg 'HH:mm' '0'}} placeholder="Segunda">
+  </div>
+
+  <div>
+     <label class="form-text" for="terca">Terça</label>
+    <input class="form-control" type="time" name="terca" id="terca" {{on 'change' (fn this.setInput 'ter' )}} value={{moment-format this.model.ter 'HH:mm' '0'}}
+      placeholder="Terça">
+  </div>
+
+  <div>
+    <label class="form-text" for="quarta">Quarta</label>
+    <input class="form-control" type="time" name="quarta" id="quarta" {{on 'change' (fn this.setInput 'qua' )}}
+      value={{moment-format this.model.qua 'HH:mm' '0'}} placeholder="Quarta">
+  </div>
+
+  <div>
+     <label class="form-text" for="quinta">Quinta</label>
+    <input class="form-control" type="time" name="quinta" id="quinta" {{on 'change' (fn this.setInput 'qui' )}}
+     value={{moment-format this.model.qui 'HH:mm' '0'}} placeholder="Quinta">
+  </div>
+
+  <div>
+     <label class="form-text" for="sexta">Sexta</label>
+    <input class="form-control" type="time" name="sexta" id="sexta" {{on 'change' (fn this.setInput 'sex' )}} value={{moment-format this.model.sex 'HH:mm' '0'}}
+      placeholder="Sexta">
+  </div>
+
+  <div>
+     <label class="form-text" for="sabado">Sábado</label>
+    <input class="form-control" type="time" name="sabado" id="sabado" {{on 'change' (fn this.setInput 'sab' )}}
+     value={{moment-format this.model.sab 'HH:mm' '0'}} placeholder="Sábado">
+  </div>
+
+  <div>
+     <label class="form-text" for="domingo">Domingo</label>
+    <input class="form-control" type="time" name="domingo" id="domingo" {{on 'change' (fn this.setInput 'dom' )}}
+      value={{moment-format this.model.dom 'HH:mm' '0'}} placeholder="Domingo">
+  </div><br>
+
+  {{!-- <div>
+    <br>
+    <label for="feriado">feriado</label>
+    <input type="number" name="feriado" id="feriado" {{on 'change' (fn this.setInput 'feriado' )}}
+      value={{this.model.feriado}} placeholder="feriado"><br>
+  </div> --}}
+  <button class="btn btn-success" type="button" id="submit" {{on "click" this.addConfig}}>Enviar</button>
+  
+
+  <LinkTo class="btn btn-dark" @route='authenticated.horario.feriado'>Tabela de feriado</LinkTo>
+   <LinkTo class="btn btn-outline-secondary" @route="authenticated.horario.index">Voltar</LinkTo>
+</div>
+
+{{/if}}
+
+
