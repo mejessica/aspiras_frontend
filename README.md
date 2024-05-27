@@ -1,236 +1,58 @@
-﻿
-### Bem-vindos a Systemar!
+# Projeto teste final da empresa
+
+## Visão Geral
+Este projeto teve o intuito de aplicar linguagens da empresa aprendidas no período de experiência. 
+De forma geral nele é possível fazer sua lista de tarefas e acrescentar seus itens, assim como monitorar o seu ponto de trabalho. 
+
+## Linguagens
+- **Frontend:**
+  - Frameworks: Ember.js
+  - HTML
+  - CSS
+- **Bancos de Dados:**
+  - SQL com Mysql 
+- **Backend:**
+  - Frameworks: Laravel
+- **Autenticação:**
+  - ember-simple-auth e ember-simple-auth-token.
+  - php-open-source-saver/jwt-auth
+ 
+## Aprendizado e dificuldades
+
+Aprendi muito sobre Ember.js e Laravel, dois frameworks que nunca havia tido contato antes, no projeto pude colocar em prática e sanar dúvidas que apareciam. Tive muita ajuda nesse período e muitas dúvidas e dificuldades que me faziam aprender mais sobre. Desde a autenticação, conexão do frontend, backend e banco de dados. Aprendi como funciona a conexão toda de um projeto fullstack.
+
+## Imagens do projeto caso você nao queira rodar para ver
+
+![Captura de tela 2024-04-24 172621](https://github.com/mejessica/laravel_projeto/assets/82670472/932ec878-3fc1-44d9-a1ce-e080b37372df)
+![Captura de tela 2024-04-24 172653](https://github.com/mejessica/laravel_projeto/assets/82670472/06a30713-9f33-49c8-97fc-1e947c808805)
+![Captura de tela 2024-04-24 172731](https://github.com/mejessica/laravel_projeto/assets/82670472/d069d848-e447-4a2b-ae97-b6e316c80ea1)
+![Captura de tela 2024-04-24 172711](https://github.com/mejessica/laravel_projeto/assets/82670472/bcd8e8a1-1d55-44e7-92a1-d77fc3152d90)
+![Captura de tela 2024-04-24 172221](https://github.com/mejessica/laravel_projeto/assets/82670472/929f208b-1896-4dcc-a9d9-c94854d27988)
+![Captura de tela 2024-04-24 172555](https://github.com/mejessica/laravel_projeto/assets/82670472/237b73d3-c325-427f-8441-320b0142a927)
+![Captura de tela 2024-04-24 172531](https://github.com/mejessica/laravel_projeto/assets/82670472/95dd2714-ca68-4934-94ab-2887984154d1)
+![Captura de tela 2024-04-24 171942](https://github.com/mejessica/laravel_projeto/assets/82670472/324554f1-ccb7-48ba-86db-1b3a16fe3e03)
+![Captura de tela 2024-04-24 171831](https://github.com/mejessica/laravel_projeto/assets/82670472/05c46dc7-dc9f-4ab8-8905-b2b76553bb59)
+![Captura de tela 2024-04-24 171719](https://github.com/mejessica/laravel_projeto/assets/82670472/ed9bb629-d4b8-450e-a45b-58bf4ae8b666)
+![Captura de tela 2024-04-24 171634](https://github.com/mejessica/laravel_projeto/assets/82670472/9a864629-4bec-4021-a4db-8344ef5ea392)
+![Captura de tela 2024-04-24 171810](https://github.com/mejessica/laravel_projeto/assets/82670472/38697348-5098-4ba2-8663-7311b29f2fb2)
+![Captura de tela 2024-04-24 171753](https://github.com/mejessica/laravel_projeto/assets/82670472/113306fa-f0ae-46ba-8c66-e8204a42d2e2)
+![Captura de tela 2024-04-24 172330](https://github.com/mejessica/laravel_projeto/assets/82670472/559b6b2a-2af8-44d8-b7ad-dabd47cd36dc)
+![Captura de tela 2024-04-24 172344](https://github.com/mejessica/laravel_projeto/assets/82670472/297199e8-d06a-484e-96ce-09109036db94)
+![Captura de tela 2024-04-24 172018](https://github.com/mejessica/laravel_projeto/assets/82670472/51da53b1-6e8d-4284-a55b-fb21d7cdaff9)
+![Captura de tela 2024-04-24 172116](https://github.com/mejessica/laravel_projeto/assets/82670472/632fac04-4a36-478a-a57a-cfee9f276f6f)
+![Captura de tela 2024-04-24 172055](https://github.com/mejessica/laravel_projeto/assets/82670472/70e689ef-6618-4f6e-b9d6-741a3effd365)
+![Captura de tela 2024-04-24 172249](https://github.com/mejessica/laravel_projeto/assets/82670472/17f8984c-940d-4d89-a0c7-a213e58d499b)
+![Captura de tela 2024-04-24 172441](https://github.com/mejessica/laravel_projeto/assets/82670472/02006932-4b85-442f-b12c-bf56652a1ea9)
+![Captura de tela 2024-04-24 172307](https://github.com/mejessica/laravel_projeto/assets/82670472/5d42bd4d-651e-43b1-bea8-7781e70d288a)
+![Captura de tela 2024-04-24 172200](https://github.com/mejessica/laravel_projeto/assets/82670472/12ce1715-67c2-4941-8fdb-a58fd6bf843f)
+![Captura de tela 2024-04-24 172400](https://github.com/mejessica/laravel_projeto/assets/82670472/4968ecfa-c484-4fcc-8cfd-c9d40e53ba73)
+![Captura de tela 2024-04-24 172418](https://github.com/mejessica/laravel_projeto/assets/82670472/3a5c1ce5-8b12-40da-a327-5c18ca4cd42a)
+
+
+## Contato
+- Email: jessgdorf@gmail.com
+- LinkedIn: Jéssica Gelsdorf https://www.linkedin.com/in/jessica-gelsdorf/
+
+## Como Contribuir
+Se você quiser sugerir melhorias, novos recursos ou correções de bugs, fique à vontade para abrir uma issue ou enviar um pull request.
 
-Olá, se vocês chegaram aqui é por que concluíram a fase de estudos e então chegou o momento de enfim aplicar os conhecimentos absorvidos até aqui.
-
-Neste arquivo você encontrará todos os requisitos e funcionalidades necessárias para o desenvolvimento do projeto AspirasProject. Conforme o treinamento, para este projeto será utilizado Ember.Js no Front-End e LaravelPHP no Back-End para fazer a API REST.
-
-Neste projeto você terá autonomia para decidir qual framework css que usara para montar os layouts (Bootstrap, MaterialDesign (Materialize, Material UI), Tailwind, Semantic UI, Bulma, UiKit, Miligram). 
-
-Independente do framework usado, lembre-se que a beleza e a responsividade do layout do projeto aqui é importante tambem.
-
-Leia este documento até o final com muita atenção antes de iniciar o desenvolvimento.
-
-# 1. Criar Formulário de Login (Autenticação)
-
-Criar um Formulário para realizar a autenticação de usuario e realizar o login no sistema, solicitar o login e a senha do usuário.
-
-A rota deverá ter o path como "/signin", ao entrar no site está rota deverá ser exibida, para realizar a autenticação no ember, utilize os addons ember-simple-auth e ember-simple-auth-token.
-
-No laravel utilizer o addon nativo "Laravel JWT Authentication" and "php-open-source-saver/jwt-auth" [Exemplo 1](https://www.positronx.io/laravel-jwt-authentication-tutorial-user-login-signup-api/), [Exemplo 2](https://blog.logrocket.com/implementing-jwt-authentication-laravel-9/)
-
-- Login (E-Mail)
-- Senha
-
-# 2. Criar um Formulário Registro de Usuário
-
-Criar um Formulário para realizar a criação do usuário, segue abaixo os detalhes da atividade:
-
-A rota deverá ter o path como "/signup"
-
-#### Campos Model User
-- E-Mail (Este será utilizado para fazer o login)
-- Nome
-- Data de Nascimento
-- Endereço
-- Bairro
-- Cidade
-- Estado
-- País
-- Senha (Utilizar alguma tecnica de encrypt/decrypt para salvar no banco de dados)
-- Confirmação de Senha (Não será gravado no banco de dados, apenas para validação)
-
-#### Validações
-- E-Mail 
-	- NotNull.
-	- UNIQUE.
-	- MaxLength 255.
-	- Não poderá repetir o e-mail na base de dados.
-- Nome 
-	- NotNull.
- 	- MaxLength 255.
-- Data de Nascimento 
-	- NotNull.
-- Endereço
-	- MaxLength 255.
-- Cidade 
-	- MaxLength 255.
-- Estado
-	- MaxLength 255.
-- Pais
-	- MaxLength 255.
-- Senha 
-	- NotNull.
-	- MinLength 8.
-	- MaxLength 255.
-	- Mínimo uma letra.
-	- Mínimo um número.
-	- Mínimo um Símbolo.
-- Confirmação de Senha (Este campo não será gravado no banco de dados)
-	- MinLength 8. 
-	- Mínimo uma letra.
-	- Mínimo um numero.
-	- Mínimo um Símbolo.
-	- Se está igual ao campo senha.
-
-# 3. Criar uma Rota Autenticada e criar uma barra de navegação com um botão de Logout.
-
-Apos a realização do login, você devera fazer a transição para a rota autenticada que será criada nesta fase.
-
-A rota autenticada devera ter o path como "/".
-
-Alem disso, você deverá realizar a implementação de uma barra de navegação (NavigationBar), nesta barra de navegação deverá ter um botão para realizar o logout, alinhado a direita.
-
-Após esta fase, todas as novas rotas implementadas deverão ser acessadas somente se o usuario estiver autenticado, no caso elas deverão ser rotas filhas da rota Autenticada.
-
-# 4. Criar uma rota '/todolist' e adicionar atalho na barra de navegação.
-
-Nesta fase você deverá criar uma rota 'todolist', ela será responsavel por exibir as 'To-Do List' (Lista de Tarefas) cadastradas no banco de dados, porem isso sera realizado somente nas próximas fases.
-
-Por enquanto, nesta rota terá apenas um botão, que será responsavel para redirecionar para a rota de criação das 'To-Do List' "/todolist/new".
-
-# 5. Criar uma Rota para Criação das To-Do-List "/todolist/new".
-
-Nesta fase voce deverá implementar um formulário para criação das listas de tarefas, está rota será acessada via botão na rota "/todolist". 
-
-#### Campos Model TodoList
-
-- Nome.
-- Usuario (Relacionamento com Model Usuario, que seria o dono da lista).
-- Data de Previsão de Termino.
-- Tarefas (Relacionamento com Model TodoItem, seriam as tarefas da lista de tarefas).
-
-#### Campos Model TodoItem
-
-- Descrição.
-- Prioridade.
-- Realizado
-
-#### Validações
-
-- Nome 
-	- NotNull.
- 	- MaxLength 255.
-- Usuario
-	- NotNull.
-- Tarefas
-	- NotNull
- 	- MinLength 1.
-
-- Descrição 
-	- NotNull.
- 	- MaxLength 255.
-- Prioridade.
-	- NotNull
-	- MaxValue 3 - (high)
-	- MinValue 0 - (low)
-
-
-# 6. Adicionar Visualização das Listas, Edição da Descrição da Tarefa, Prioridade da Tarefa e Exclusão de Tarefa.
-
-Na rota "/todolist" criar a visualização das Listas de Tarefas do usuário, apos criar a visualização, adicionar opção para Editar a Descrição da Tarefa, Prioridade, e tambem a possibilidade de excluir uma Tarefa de uma Lista.
-
-Estar atento as Validações dos Campo, para não permitir na edição deixar algum valor inválido.
-
-# 7. Criar uma Rota de Edição de Dados do Usuário "/users/id/edit.
-
-Remover Botão de Logout, e adicionar um botão para abrir as opções do perfil do usuario, ao clicar no botão deverá aparecer um Menu DropDown com as seguintes opções: "Editar Perfil" e "Logout".
-
-Ao clicar em editar perfil, redirecionar para a rota de edição de perfil, ao clicar em logout realizar a desautenticação do usuario no sistema.
-
-# 8. Criar uma Rota '/dailycontrol' e Adicionar um atalho para está rota na Navigation Bar
-
-Chegou de fato o momento do grande desafio de vocês. Nesta fase vocês deverão implementar um sistema de controle de horarios nesta rota.
-
-Nesta rota deverá ter uma navegação por mês, ao entrar nesta rota sempre exibir o mês atual e os horarios de trabalho já registrados.
-
-Primeiramente vocês deverão implementar a parte das configurações, nesta rota incluir um botão configurações, onde deverá abrir os campos de configurações para editar se ja houver configurações, se não houver incluir uma nova.
-
-
-#### Campos Necessários Model de Configuração 
-
-- Carga Horaria Segunda.
-- Carga Horaria Terça.
-- Carga Horaria Quarta.
-- Carga Horaria Quinta.
-- Carga Horaria Sexta.
-- Carga Horaria Sabado.
-- Carga Horaria Domingo.
-- Carga Horaria Feriados.
-- Feriados (Model Feriado) (podem existir varios feriados)
-
-
-#### Campos Necessarios Model Feriado
-
-- Data
-- Descrição
-- ConfiguraçãoId 
-
-#### Validações Configuração
-- Usuário 
-	- NotNull
-
-#### Validações Feriado
-
-- Data 
-	- NotNull.
-- Descrição
-	- NotNull.
-	- MaxLength 255.
-- ConfiguraçãoId
-	- NotNull.
-	- MaxLength 255.
-
-
-Apos criar a inclusão/edição das configurações, chegou o grande desafio implementar um sistema de controle de horarios.
-
-
-Primeiramente vocês deverão adicionar um botão "Incluir Carga Horária", ao apertar este botão, deverá ser permitido incluir a carga horaria para um dia especifico, sempre deverá ser sugerido o dia atual, sendo permitido o usuario alterar para o dia desejado, se ja houver carga horaria registrada para aquele dia, permitir a edição, se não existir, permitir a inserção da carga horaria.
-
-#### Campos Necessarios Model Feriado
-
-- Data (dia da carga horaria)
-- Horario de Entrada 1
-- Horario de Saida 1
-- Horario de Entrada 2
-- Horario de Saida 2
-
-#### Validações
-
-- Data (dia da carga horaria) 
-	- NotNull
-- Não permitir inserir carga horaria para um dia que estiver registrado como Feriado.
-- Horario de Saida > Horario de Entrada 
-
-Apos realizar a criação da inserção da Carga Horaria, vamos partir para a exibição e calculos, utilizar a planilha de exemplo como referencia para calculos e ideias de exibição.
-
-Ao entrar na rota /dailycontrol, deverá exibir o mes atual, e seus dias organizados em linha (Lembrem-se o Layout bonito e responsivo IMPORTA MUITO. [Exemplo](https://docs.google.com/spreadsheets/d/1PiYIYNJMjbM1MlXSLhoo3Pw8ImpU7crnFpWwY4K9l7c/edit?usp=sharing)
-
-#### Dados que deverão ser exibidos para todos os Meses
-
-- Exibir todos os dias do Mês selecionado (ao entrar na rota, trazer sempre o mês atual)
-- Dia da Semana referente ao Dia (Exemplo: Segunda, Terça, Quarta, etc...) 
-- Horario Entrada 1 (por dia)
-- Horario Saida 1 (por dia)
-- Horario Entrada 2 (por dia)
-- Horario Saída 2 (por dia)
-- Total de Horas Trabalhadas (por dia)
-- Total de Horas Devido (por dia)
-- Total de Horas Extra (por dia)
-- Total de horas Trabalhadas (por mês)
-- Total de Horas Devido (por mês)
-- Total de Horas Extra (por mês)
-- Quando houver um feriado registrado para um dia, não contabilizar este dia para o calculo.
-- Contabilizar para o calculo apenas os dias que houverem carga horaria configurada
-
-
-# 9. Lembretes
-
-- O Layout é muito importante neste momento, a partir de agora a design do layout, a responsividade, cores e estilos de fonte importam agora, então caprichem!
-- Agora é o momento de vocês aplicarem todo conhecimento adquirido nesses dias de cursos e treinamentos, juntamente com as habilidades que ja possuiam antes de entrar na Systemar, trabalhem para obter o melhor resultado utilizando Ember.js no Front-End e o Back-end API Rest com Laravel.
-- Não é só o layout que importa, o codigo das aplicações, atenção em produzir um codigo legivel, reutilizavel e de boa qualidade, atenção na utilização repetições do mesmo codigo nas diferentes aplicações, faça somente quando for realmente necessario em ultimo caso, pois não é uma prática de qualidade.
-- Utilizar Ember-moment para o controle de datas no Ember. [Link](https://github.com/adopted-ember-addons/ember-moment)
-- Utilizar Ember-simple-auth para gerenciar autenticação no Ember. [Link](https://github.com/mainmatter/ember-simple-auth)
-- Este projeto deverá ser desenvolvido individualmente, então, vocês deverão criar uma branch com o nome de vocês, e todo trabalho será comitado nesta branch, Ao final as aplicações serão avaliadas.
-- Utilizar o "yarn" como gerenciador de pacotes ao inves de NPM (Utilizar somente o yarn, pois utilizamos em nossos projetos).
-- Se estiverem com duvidas quanto ao Calculo de Horas do Ponto, na raiz dos projetos existem um arquivo chamado "Ponto Maio.xlsx", é uma planilha de calculo de ponto onde vocês podem utiliza-la para entender como funcionar o calculo.
