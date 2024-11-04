@@ -10,7 +10,7 @@
             Opções
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" {{on "click" this.invalidateSession}}>Logout</a></li>
+            <li><a class="dropdown-item" style="cursor: pointer;" {{on "click" this.invalidateSession}}>Logout</a></li>
             <li>
               <LinkTo class="dropdown-item" @route='authenticated.list'>Todo-list</LinkTo>
             </li>
@@ -34,7 +34,3 @@
 <div class="main">
   {{outlet}}
 </div>
-
-{{#if this.session.isAuthenticated}}
-<Footer />
-{{/if}}

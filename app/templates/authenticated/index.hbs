@@ -1,78 +1,79 @@
 {{page-title "Index"}}
 
 <div class="index">
-<div id="carouselExampleCaptions" class="carousel slide" >
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="2000">
-      <img src="/assets/images/pexels-cottonbro-studio-7428859.jpg" class="d-block w-100" alt="imagem com folha que simboliza uma lista de afazeres com 'monday escrito">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Gerencie seus horários de trabalho</h5>
-        <p>Faça você sua gerência de horários</p>
+  <div id="carouselExampleCaptions" class="carousel slide" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="/assets/images/pexels-cottonbro-studio-7428859.jpg" class="d-block w-100" alt="imagem com folha que simboliza uma lista de afazeres com 'monday escrito">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Gerencie seus horários de trabalho</h5>
+          <p>Faça você sua gerência de horários</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/assets/images/pexels-tima-miroshnichenko-6694543.jpg" class="d-block w-100" alt="imagem de uma mesa de trabalho com papeis com graficos, dinheiros empilhados e um notebook mostrando as ações">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Calcule suas finanças do mês</h5>
+          <p>Faça seus calculos de finanças e investimento.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/assets/images/pexels-vlada-karpovich-4050300.jpg" class="d-block w-100" alt="mulher com uma agenda aberta escrevendo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Organize sua lista de tarefas</h5>
+          <p>Tenha sempre na mão o que precisa fazer no seu dia!</p>
+        </div>
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="/assets/images/pexels-tima-miroshnichenko-6694543.jpg" class="d-block w-100" alt="imagem de uma mesa de trabalho com papeis com graficos, dinheiros empilhados e um notebook mostrando as ações">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Calcule suas finanças do mês</h5>
-        <p>Faça seus calculos de finanças e investimento.</p>
-      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h1 class="title">Veja nossos serviços</h1>
+
+  <div class="content">
+  <div class="card" >
+    <img src="/assets/images/financas.jpg" class="card-img-top" alt="um notebook aberto nas ações e um moço segurando um xicara de cafe em uma mão e o celular com o grafico das ações na outro">
+    <div class="card-body">
+      <h5 class="card-title">Calcule suas finanças</h5>
+      <p class="card-text">Acompanhe suas receitas e despesas de forma fácil e eficiente.
+  Crie orçamentos personalizados e monitore seu progresso.
+  Receba insights valiosos por meio de relatórios detalhados.</p>
+      <a href="#" class="btn btn-outline-primary">Ver</a>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="/assets/images/pexels-vlada-karpovich-4050300.jpg" class="d-block w-100" alt="mulher com uma agenda aberta escrevendo">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Organize sua lista de tarefas</h5>
-        <p>Tenha sempre na mão o que precisa fazer no seu dia!</p>
-      </div>
+  </div>
+  <div class="card" >
+    <img src="/assets/images/planner.jpg" class="card-img-top" alt="uma agenda de horarios com uma caneta">
+    <div class="card-body">
+      <h5 class="card-title">Administre seu horário de trabalho</h5>
+      <p class="card-text">Registre suas horas de trabalho de forma precisa e automatizada.
+  Visualize seu cronograma semanal e mensal para melhor planejamento.
+  Receba lembretes e notificações para horários importantes.</p>
+        <LinkTo class="btn btn-outline-primary" @route='authenticated.horario'>Ver</LinkTo>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<h1 class="title">Veja nossos serviços</h1>
-
-<div class="content">
-<div class="card" >
-  <img src="/assets/images/financas.jpg" class="card-img-top" alt="um notebook aberto nas ações e um moço segurando um xicara de cafe em uma mão e o celular com o grafico das ações na outro">
-  <div class="card-body">
-    <h5 class="card-title">Calcule suas finanças</h5>
-    <p class="card-text">Acompanhe suas receitas e despesas de forma fácil e eficiente.
-Crie orçamentos personalizados e monitore seu progresso.
-Receba insights valiosos por meio de relatórios detalhados.</p>
-    <a href="#" class="btn btn-outline-primary">Ver</a>
+  <div class="card" >
+    <img src="/assets/images/todo.jpg" class="card-img-top" alt="mão de uma mulher escrevendo em uma agenda">
+    <div class="card-body">
+      <h5 class="card-title">Organize seus afazeres</h5>
+      <p class="card-text">Crie listas de tarefas personalizadas para organizar seu dia a dia.
+  Priorize e acompanhe o progresso das suas tarefas facilmente.
+  Compartilhe listas com colegas de trabalho ou membros da família.</p>
+        <LinkTo class="btn btn-outline-primary" @route='authenticated.list'>Ver</LinkTo>
+    </div>
   </div>
-</div>
-<div class="card" >
-  <img src="/assets/images/planner.jpg" class="card-img-top" alt="uma agenda de horarios com uma caneta">
-  <div class="card-body">
-    <h5 class="card-title">Administre seu horário de trabalho</h5>
-    <p class="card-text">Registre suas horas de trabalho de forma precisa e automatizada.
-Visualize seu cronograma semanal e mensal para melhor planejamento.
-Receba lembretes e notificações para horários importantes.</p>
-      <LinkTo class="btn btn-outline-primary" @route='authenticated.horario'>Ver</LinkTo>
   </div>
-</div>
-<div class="card" >
-  <img src="/assets/images/todo.jpg" class="card-img-top" alt="mão de uma mulher escrevendo em uma agenda">
-  <div class="card-body">
-    <h5 class="card-title">Organize seus afazeres</h5>
-    <p class="card-text">Crie listas de tarefas personalizadas para organizar seu dia a dia.
-Priorize e acompanhe o progresso das suas tarefas facilmente.
-Compartilhe listas com colegas de trabalho ou membros da família.</p>
-      <LinkTo class="btn btn-outline-primary" @route='authenticated.list'>Ver</LinkTo>
-  </div>
-</div>
-</div>
 
- </div>
+</div>
+<Footer />
