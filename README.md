@@ -16,6 +16,8 @@ De forma geral nele é possível fazer sua lista de tarefas e acrescentar seus i
 - **Autenticação:**
   - ember-simple-auth e ember-simple-auth-token.
   - php-open-source-saver/jwt-auth
+- **Link no Github - backend**
+  - https://github.com/mejessica/aspiras_backend
  
 ## Aprendizado e dificuldades
 
